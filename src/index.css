@@ -8,65 +8,67 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Premium Real Estate Investment Palette */
-    --background: 0 0% 98%;
-    --foreground: 210 20% 15%;
+    /* Premium Real Estate Investment Palette - Enhanced 2025 */
+    --background: 0 0% 99%;
+    --foreground: 220 25% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card-foreground: 220 25% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover-foreground: 220 25% 12%;
 
-    /* Professional Investment Blue */
-    --primary: 214 84% 56%;
-    --primary-foreground: 0 0% 98%;
-    --primary-muted: 214 50% 85%;
+    /* Professional Investment Blue - Enhanced */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 217 70% 90%;
 
-    /* Sophisticated Grays */
-    --secondary: 210 15% 95%;
-    --secondary-foreground: 210 20% 15%;
+    /* Sophisticated Grays - Enhanced */
+    --secondary: 220 20% 96%;
+    --secondary-foreground: 220 25% 12%;
 
-    --muted: 210 15% 96%;
-    --muted-foreground: 210 15% 45%;
+    --muted: 220 20% 97%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 20% 92%;
-    --accent-foreground: 210 20% 15%;
+    --accent: 220 25% 94%;
+    --accent-foreground: 220 25% 12%;
 
-    /* Premium Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(220 70% 48%));
-    --gradient-secondary: linear-gradient(180deg, hsl(210 15% 98%), hsl(210 15% 95%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 20% 15% / 0.9), hsl(214 84% 56% / 0.8));
+    /* Premium Gradients - Enhanced 2025 */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(223 80% 50%));
+    --gradient-secondary: linear-gradient(180deg, hsl(220 20% 99%), hsl(220 20% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 12% / 0.95), hsl(217 91% 60% / 0.85));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.05));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8), hsl(0 0% 100% / 0.4));
 
-    /* Elegant Shadows */
-    --shadow-elegant: 0 4px 20px -2px hsl(210 20% 15% / 0.08);
-    --shadow-premium: 0 10px 40px -10px hsl(214 84% 56% / 0.15);
-    --shadow-card: 0 2px 10px -2px hsl(210 15% 45% / 0.1);
+    /* Elegant Shadows - Enhanced 2025 */
+    --shadow-elegant: 0 4px 25px -5px hsl(220 25% 12% / 0.1);
+    --shadow-premium: 0 20px 60px -20px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(220 15% 45% / 0.08);
+    --shadow-glass: 0 8px 32px -8px hsl(220 25% 12% / 0.12);
+    --shadow-hover: 0 25px 80px -25px hsl(217 91% 60% / 0.25);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 92%;
-    --ring: 214 84% 56%;
+    --border: 220 20% 92%;
+    --input: 220 20% 94%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
+    --sidebar-background: 0 0% 99%;
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* New 2025 Design Variables */
+    --glass-bg: 0 0% 100% / 0.7;
+    --glass-border: 0 0% 100% / 0.2;
+    --glass-shadow: 0 8px 32px -8px hsl(220 25% 12% / 0.1);
   }
 
   .dark {
@@ -115,5 +117,127 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-inter;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Enhanced Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Components */
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-glass;
+  }
+
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-xl border border-white/10 shadow-glass;
+  }
+
+  /* Enhanced Card Components */
+  .card-modern {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-card hover:shadow-hover transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1;
+  }
+
+  .card-glass {
+    @apply bg-gradient-card backdrop-blur-xl border border-white/20 shadow-glass hover:shadow-hover transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1;
+  }
+
+  /* Enhanced Button Components */
+  .btn-modern {
+    @apply relative overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95;
+  }
+
+  .btn-modern::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full transition-transform duration-700;
+  }
+
+  .btn-modern:hover::before {
+    @apply translate-x-full;
+  }
+
+  /* Enhanced Navigation */
+  .nav-link {
+    @apply relative text-sm font-medium transition-colors hover:text-primary;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  /* Enhanced Typography */
+  .heading-gradient {
+    @apply bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Enhanced Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Enhanced Grid Layouts */
+  .grid-modern {
+    @apply grid gap-6 md:gap-8 lg:gap-10;
+  }
+
+  /* Enhanced Spacing */
+  .section-modern {
+    @apply py-20 lg:py-32;
+  }
+
+  .container-modern {
+    @apply container mx-auto px-6 lg:px-8 max-w-7xl;
   }
 }

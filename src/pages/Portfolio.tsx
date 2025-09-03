@@ -90,12 +90,15 @@ const Portfolio = () => {
                 <Label htmlFor="password">Access Code</Label>
                 <Input
                   id="password"
-                  type="password"
+                  type="text"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter portfolio access code"
                   className="mt-2"
                 />
+                <p className="text-xs text-primary mt-1 text-center">
+                  💡 Test Password: <strong>investor2024</strong>
+                </p>
               </div>
               
               <Button type="submit" className="w-full shadow-elegant">
