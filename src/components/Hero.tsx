@@ -1,33 +1,39 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Users, Building2, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  TrendingUp,
+  Users,
+  Building2,
+  Sparkles,
+} from "lucide-react";
 import heroImage from "@/assets/hero-building.jpg";
 
 export const Hero = () => {
   const metrics = [
-    { 
-      icon: Building2, 
-      label: "Properties Managed", 
+    {
+      icon: Building2,
+      label: "Properties Managed",
       value: "$2.8B+",
-      description: "Total portfolio value"
+      description: "Total portfolio value",
     },
-    { 
-      icon: TrendingUp, 
-      label: "Average ROI", 
+    {
+      icon: TrendingUp,
+      label: "Average ROI",
       value: "18.5%",
-      description: "Annual returns"
+      description: "Annual returns",
     },
-    { 
-      icon: Users, 
-      label: "Satisfied Investors", 
+    {
+      icon: Users,
+      label: "Satisfied Investors",
       value: "500+",
-      description: "Active partnerships"
+      description: "Active partnerships",
     },
   ];
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Enhanced Background Image with Parallax Effect */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
@@ -55,30 +61,39 @@ export const Hero = () => {
           </div>
 
           {/* Enhanced Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 leading-tight animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+          <h1
+            className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 leading-tight animate-fade-in-up"
+            style={{ animationDelay: "200ms" }}
+          >
             <span className="block">Premium Real Estate</span>
             <span className="block heading-gradient">Investment Solutions</span>
           </h1>
-          
+
           {/* Enhanced Subtitle */}
-          <p className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 mb-12 max-w-3xl leading-relaxed animate-fade-in-up text-balance" style={{ animationDelay: '400ms' }}>
-            Building wealth through strategic property investments. 
-            Partner with us for institutional-grade real estate opportunities 
-            that deliver consistent, above-market returns.
+          <p
+            className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 mb-12 max-w-3xl leading-relaxed animate-fade-in-up text-balance"
+            style={{ animationDelay: "400ms" }}
+          >
+            Building wealth through strategic property investments. Partner with
+            us for institutional-grade real estate opportunities that deliver
+            consistent, above-market returns.
           </p>
 
           {/* Enhanced CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 mb-20 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
-            <Button 
-              size="lg" 
+          <div
+            className="flex flex-col sm:flex-row gap-6 mb-20 animate-fade-in-up"
+            style={{ animationDelay: "600ms" }}
+          >
+            <Button
+              size="lg"
               className="btn-modern bg-gradient-primary hover:bg-gradient-primary/90 shadow-premium hover:shadow-hover group text-lg px-8 py-6 h-auto"
             >
               <span className="relative z-10">Explore Opportunities</span>
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="btn-modern border-primary/40 text-primary/90 hover:bg-primary/20 hover:border-primary hover:text-primary backdrop-blur-sm text-lg px-8 py-6 h-auto group"
             >
               <span className="relative z-10">Download Prospectus</span>
@@ -87,10 +102,13 @@ export const Hero = () => {
           </div>
 
           {/* Enhanced Metrics Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in-up" style={{ animationDelay: '800ms' }}>
+          <div
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in-up"
+            style={{ animationDelay: "800ms" }}
+          >
             {metrics.map((metric, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="group relative"
                 style={{ animationDelay: `${1000 + index * 200}ms` }}
               >

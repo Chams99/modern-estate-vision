@@ -6,15 +6,21 @@ interface LoadingSpinnerProps {
   className?: string;
 }
 
-export const LoadingSpinner = ({ size = "md", text, className = "" }: LoadingSpinnerProps) => {
+export const LoadingSpinner = ({
+  size = "md",
+  text,
+  className = "",
+}: LoadingSpinnerProps) => {
   const sizeClasses = {
     sm: "h-4 w-4",
     md: "h-8 w-8",
-    lg: "h-12 w-12"
+    lg: "h-12 w-12",
   };
 
   return (
-    <div className={`flex flex-col items-center justify-center space-y-4 ${className}`}>
+    <div
+      className={`flex flex-col items-center justify-center space-y-4 ${className}`}
+    >
       <div className="relative">
         <Loader2 className={`${sizeClasses[size]} animate-spin text-primary`} />
         <div className="absolute inset-0 bg-gradient-primary rounded-full opacity-20 blur-lg animate-pulse" />
@@ -34,12 +40,18 @@ export const PageLoader = () => {
       <div className="text-center">
         <div className="relative mb-8">
           <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow animate-pulse">
-            <span className="text-primary-foreground font-bold text-xl">MC</span>
+            <span className="text-primary-foreground font-bold text-xl">
+              MC
+            </span>
           </div>
           <div className="absolute inset-0 bg-gradient-primary rounded-2xl opacity-20 blur-xl animate-pulse" />
         </div>
-        <h2 className="text-2xl font-bold text-foreground mb-2">Meridian Capital</h2>
-        <p className="text-muted-foreground">Loading your investment journey...</p>
+        <h2 className="text-2xl font-bold text-foreground mb-2">
+          Meridian Capital
+        </h2>
+        <p className="text-muted-foreground">
+          Loading your investment journey...
+        </p>
         <div className="mt-8">
           <LoadingSpinner size="lg" />
         </div>

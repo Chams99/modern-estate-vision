@@ -5,18 +5,21 @@ A premium real estate investment website built with modern 2025 design practices
 ## ✨ 2025 Design Enhancements
 
 ### 🎨 Modern Visual Design
+
 - **Glassmorphism Effects**: Sophisticated backdrop blur and transparency effects
 - **Enhanced Color System**: Refined HSL color palette with better contrast and accessibility
 - **Modern Typography**: Improved font hierarchy with better spacing and readability
 - **Premium Gradients**: Sophisticated gradient combinations for visual depth
 
 ### 🚀 Enhanced User Experience
+
 - **Smooth Animations**: CSS animations with staggered delays and smooth transitions
 - **Micro-interactions**: Hover effects, scale transforms, and interactive feedback
 - **Responsive Design**: Mobile-first approach with enhanced mobile navigation
 - **Loading States**: Modern skeleton screens and loading animations
 
 ### 🎯 New Components & Features
+
 - **Enhanced Navigation**: Fixed navigation with scroll-triggered transparency
 - **Modern Hero Section**: Improved typography, floating elements, and enhanced metrics
 - **Features Grid**: 8-feature showcase with color-coded icons and hover effects
@@ -25,6 +28,7 @@ A premium real estate investment website built with modern 2025 design practices
 - **Enhanced Footer**: Social media links, improved layout, and scroll-to-top button
 
 ### 🔧 Technical Improvements
+
 - **Performance Optimization**: Lazy loading for better initial page load
 - **Modern Hooks**: Custom hooks for scroll management and intersection observer
 - **Enhanced Animations**: CSS keyframes with smooth easing and timing
@@ -44,10 +48,12 @@ A premium real estate investment website built with modern 2025 design practices
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
+
 ```bash
 # Clone the repository
 git clone https://github.com/Chams99/modern-estate-vision.git
@@ -63,6 +69,7 @@ npm run dev
 ```
 
 ### Available Scripts
+
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run build:dev` - Build for development
@@ -72,22 +79,26 @@ npm run dev
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary**: Professional investment blue (HSL: 217 91% 60%)
 - **Background**: Clean white with subtle gray undertones
 - **Text**: High contrast dark gray for excellent readability
 - **Accents**: Sophisticated muted colors for secondary elements
 
 ### Typography
+
 - **Font Family**: Inter (system-ui fallback)
 - **Scale**: Modular scale with improved spacing
 - **Hierarchy**: Clear heading levels with consistent sizing
 
 ### Spacing & Layout
+
 - **Grid System**: Modern CSS Grid with responsive breakpoints
 - **Spacing Scale**: Consistent spacing using Tailwind's scale
 - **Container**: Max-width containers with responsive padding
 
 ### Shadows & Effects
+
 - **Glassmorphism**: Backdrop blur with transparency
 - **Elevation**: Layered shadow system for depth
 - **Hover Effects**: Smooth transitions and micro-interactions
@@ -116,16 +127,19 @@ npm run dev
 ## 🚀 Deployment
 
 ### Build for Production
+
 ```bash
 npm run build
 ```
 
 ### Preview Production Build
+
 ```bash
 npm run preview
 ```
 
 ### Deploy to Vercel/Netlify
+
 The project is optimized for modern hosting platforms with automatic builds and deployments.
 
 ## 📈 Future Enhancements

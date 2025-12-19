@@ -7,21 +7,24 @@ export const CompanyOverview = () => {
     {
       icon: Shield,
       title: "Trust & Transparency",
-      description: "Full transparency in all investments with detailed reporting and regular updates.",
-      highlight: "100% Transparent"
+      description:
+        "Full transparency in all investments with detailed reporting and regular updates.",
+      highlight: "100% Transparent",
     },
     {
       icon: Target,
-      title: "Strategic Focus", 
-      description: "Data-driven investment strategies focusing on high-growth metropolitan markets.",
-      highlight: "Data-Driven"
+      title: "Strategic Focus",
+      description:
+        "Data-driven investment strategies focusing on high-growth metropolitan markets.",
+      highlight: "Data-Driven",
     },
     {
       icon: Award,
       title: "Proven Excellence",
-      description: "15+ years of consistent returns with a track record of successful property investments.",
-      highlight: "15+ Years"
-    }
+      description:
+        "15+ years of consistent returns with a track record of successful property investments.",
+      highlight: "15+ Years",
+    },
   ];
 
   return (
@@ -29,7 +32,7 @@ export const CompanyOverview = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05)_0px,transparent_50px)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.05)_0px,transparent_50px)]" />
-      
+
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
@@ -45,24 +48,33 @@ export const CompanyOverview = () => {
               Why Choose Meridian Capital
             </span>
           </div>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+
+          <h2
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 animate-fade-in-up"
+            style={{ animationDelay: "200ms" }}
+          >
             <span className="block">Building Tomorrow's</span>
-            <span className="block heading-gradient">Real Estate Portfolio</span>
+            <span className="block heading-gradient">
+              Real Estate Portfolio
+            </span>
           </h2>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-in-up text-balance" style={{ animationDelay: '400ms' }}>
-            Our expertise lies in identifying undervalued properties with high growth potential. 
-            We leverage market insights and strategic partnerships to create exceptional value 
-            for our investors through carefully curated real estate portfolios.
+
+          <p
+            className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-in-up text-balance"
+            style={{ animationDelay: "400ms" }}
+          >
+            Our expertise lies in identifying undervalued properties with high
+            growth potential. We leverage market insights and strategic
+            partnerships to create exceptional value for our investors through
+            carefully curated real estate portfolios.
           </p>
         </div>
 
         {/* Enhanced Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {values.map((value, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group relative animate-fade-in-up"
               style={{ animationDelay: `${600 + index * 200}ms` }}
             >
@@ -73,20 +85,20 @@ export const CompanyOverview = () => {
                   <value.icon className="h-10 w-10 text-primary-foreground" />
                   <div className="absolute inset-0 bg-gradient-primary rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl" />
                 </div>
-                
+
                 {/* Enhanced Highlight Badge */}
                 <div className="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-6">
                   {value.highlight}
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary transition-colors duration-300">
                   {value.title}
                 </h3>
-                
+
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   {value.description}
                 </p>
-                
+
                 {/* Enhanced Hover Effect */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full" />
               </Card>
@@ -95,10 +107,13 @@ export const CompanyOverview = () => {
         </div>
 
         {/* Enhanced CTA Section */}
-        <div className="text-center animate-fade-in-up" style={{ animationDelay: '1200ms' }}>
-          <Button 
-            size="lg" 
-            variant="outline" 
+        <div
+          className="text-center animate-fade-in-up"
+          style={{ animationDelay: "1200ms" }}
+        >
+          <Button
+            size="lg"
+            variant="outline"
             className="btn-modern group shadow-elegant hover:shadow-premium text-lg px-10 py-6 h-auto border-2 border-primary hover:border-primary/80"
           >
             <span className="relative z-10">Learn More About Us</span>
@@ -112,10 +127,10 @@ export const CompanyOverview = () => {
             { number: "15+", label: "Years Experience" },
             { number: "$2.8B+", label: "Portfolio Value" },
             { number: "500+", label: "Happy Investors" },
-            { number: "98%", label: "Satisfaction Rate" }
+            { number: "98%", label: "Satisfaction Rate" },
           ].map((stat, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="text-center animate-fade-in-up"
               style={{ animationDelay: `${1400 + index * 100}ms` }}
             >

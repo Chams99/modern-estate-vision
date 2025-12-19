@@ -1,10 +1,19 @@
-import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook, Instagram, ArrowUp } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Instagram,
+  ArrowUp,
+} from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -12,16 +21,17 @@ export const Footer = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(59,130,246,0.1)_0px,transparent_50px)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1)_0px,transparent_50px)]" />
-      
+
       <div className="container-modern relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-20">
-          
           {/* Enhanced Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-8">
               <div className="relative">
                 <div className="w-12 h-12 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-                  <span className="text-primary-foreground font-bold text-lg">MC</span>
+                  <span className="text-primary-foreground font-bold text-lg">
+                    MC
+                  </span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-primary rounded-2xl opacity-20 blur-xl" />
               </div>
@@ -32,12 +42,13 @@ export const Footer = () => {
                 </span>
               </div>
             </div>
-            
+
             <p className="text-background/80 mb-8 max-w-lg leading-relaxed text-lg">
-              We are a boutique real estate investment firm that combines deep market knowledge 
-              with innovative strategies to deliver exceptional returns for our investors.
+              We are a boutique real estate investment firm that combines deep
+              market knowledge with innovative strategies to deliver exceptional
+              returns for our investors.
             </p>
-            
+
             {/* Enhanced Contact Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-4 group">
@@ -69,7 +80,9 @@ export const Footer = () => {
 
           {/* Enhanced Quick Links */}
           <div>
-            <h3 className="font-bold text-xl mb-8 text-background">Quick Links</h3>
+            <h3 className="font-bold text-xl mb-8 text-background">
+              Quick Links
+            </h3>
             <div className="space-y-4">
               {[
                 { name: "Home", path: "/" },
@@ -77,11 +90,11 @@ export const Footer = () => {
                 { name: "Portfolio", path: "/portfolio" },
                 { name: "Contact", path: "/contact" },
                 { name: "Investment Guide", path: "/guide" },
-                { name: "Market Insights", path: "/insights" }
+                { name: "Market Insights", path: "/insights" },
               ].map((link) => (
-                <a 
+                <a
                   key={link.name}
-                  href={link.path} 
+                  href={link.path}
                   className="block text-background/70 hover:text-primary transition-all duration-300 hover:translate-x-2 group"
                 >
                   <span className="group-hover:underline underline-offset-4">
@@ -94,18 +107,20 @@ export const Footer = () => {
 
           {/* Enhanced Services */}
           <div>
-            <h3 className="font-bold text-xl mb-8 text-background">Investment Focus</h3>
+            <h3 className="font-bold text-xl mb-8 text-background">
+              Investment Focus
+            </h3>
             <div className="space-y-4">
               {[
                 "Commercial Office",
-                "Multi-Family Residential", 
+                "Multi-Family Residential",
                 "Mixed-Use Development",
                 "Industrial Properties",
                 "Retail Centers",
-                "Hospitality Assets"
+                "Hospitality Assets",
               ].map((service, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="text-background/70 hover:text-primary transition-colors duration-300 cursor-pointer group"
                 >
                   <span className="group-hover:underline underline-offset-4">
@@ -117,13 +132,15 @@ export const Footer = () => {
 
             {/* Enhanced Social Links */}
             <div className="mt-8">
-              <h4 className="font-semibold text-lg mb-4 text-background">Follow Us</h4>
+              <h4 className="font-semibold text-lg mb-4 text-background">
+                Follow Us
+              </h4>
               <div className="flex space-x-4">
                 {[
                   { icon: Linkedin, href: "#", label: "LinkedIn" },
                   { icon: Twitter, href: "#", label: "Twitter" },
                   { icon: Facebook, href: "#", label: "Facebook" },
-                  { icon: Instagram, href: "#", label: "Instagram" }
+                  { icon: Instagram, href: "#", label: "Instagram" },
                 ].map((social) => (
                   <a
                     key={social.label}
@@ -144,18 +161,18 @@ export const Footer = () => {
           <div className="text-background/60 text-sm mb-4 lg:mb-0">
             © {currentYear} Meridian Capital. All rights reserved.
           </div>
-          
+
           <div className="flex flex-wrap justify-center lg:justify-end gap-6 text-sm">
             {[
               "Privacy Policy",
-              "Terms of Service", 
+              "Terms of Service",
               "Investor Relations",
               "Cookie Policy",
-              "Accessibility"
+              "Accessibility",
             ].map((link) => (
-              <a 
+              <a
                 key={link}
-                href="#" 
+                href="#"
                 className="text-background/60 hover:text-primary transition-colors duration-300 hover:underline underline-offset-4"
               >
                 {link}
